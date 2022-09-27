@@ -28,7 +28,6 @@ function App() {
 			}
 			else {
 				return setInput('-'+input)
-				}
 			}
 		}
 		
@@ -47,7 +46,7 @@ function App() {
 			</ResultBar>
 			<TileHolder tiles= {
 				tileValues.map((tile, i) => {
-					return <Tile key = {i} content={tile} onClick={() => change(tile, init)}></Tile>
+					return <Tile key = {i} content={tile} onClick={() => change(tile)}></Tile>
 				})
 			}> 
 			</TileHolder>
